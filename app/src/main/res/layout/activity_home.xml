@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HomeActivity"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/barra_superiore"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/gradient_barrasuperiore" />
+
+    <TextView
+        android:id="@+id/textNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/textCognome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNome"
+        android:layout_alignStart="@+id/textNome"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/barra_superiore"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#B60202"
+        android:text="Logout"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/barra_superiore"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textBenvenuto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Benvenuto in Noi UNINA"
+                android:textColor="#359BEC"
+                android:textSize="25dp" />
+
+            <ImageButton
+                android:id="@+id/buttonPrenotazione"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/textBenvenuto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/library" />
+
+            <TextView
+                android:id="@+id/textEffettuaPrenotazione"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonPrenotazione"
+                android:layout_centerHorizontal="true"
+                android:text="Effettua Prenotazione"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <ImageButton
+                android:id="@+id/buttonTraduzione"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/textEffettuaPrenotazione"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="39dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/translation" />
+
+            <TextView
+                android:id="@+id/textTraduciTesto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonTraduzione"
+                android:layout_centerHorizontal="true"
+                android:text="Traduci Testo"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/buttonChat"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/textTraduciTesto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/chat" />
+
+            <TextView
+                android:id="@+id/textEntrainChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonChat"
+                android:layout_centerHorizontal="true"
+                android:text="Entra in Chat"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

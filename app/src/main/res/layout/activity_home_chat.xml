@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HomeChatActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/barra_superiore"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/gradient_barrasuperiore" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/barra_superiore"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textTitoloHomeChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Chatta con Noi UNINA"
+                android:textColor="#359BEC"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textIstruzioniSottoscrizione"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTitoloHomeChat"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:text="Accedi alla lista dei gruppi chat del tuo corso di studio ed effettua la sottoscrizione"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/buttonSottoscritiviChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textIstruzioniSottoscrizione"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#359BEC"
+                android:ems="15"
+                android:text="Sottoscriviti ai gruppi Chat"
+                android:textColor="@color/white"
+                app:cornerRadius="20dp" />
+
+            <TextView
+                android:id="@+id/textIstruzioniChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonSottoscritiviChat"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="Accedi ai gruppi chat in cui sei sottoiscritto e inizia a chattare con i tuoi colleghi"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/buttonIniziaChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textIstruzioniChat"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#359BEC"
+                android:ems="15"
+                android:text="Accedi alla lista Chat"
+                android:textColor="@color/white"
+                app:cornerRadius="20dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminate="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

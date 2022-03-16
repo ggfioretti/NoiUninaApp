@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/barra_superiore"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/gradient_barrasuperiore"
+        />
+
+    <Button
+        android:id="@+id/buttonAggiorna"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/barra_superiore"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#049E1E"
+        android:text="Aggiorna"
+        android:textColor="@color/white" />
+
+
+    <TextView
+        android:id="@+id/titolo_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barra_superiore"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textColor="#359BEC"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/titolo_chat"
+        android:layout_marginTop="15dp" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:baselineAligned="true"
+        android:layout_alignParentBottom="true"
+        >
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/textInput"
+            android:layout_height="45dp"
+            android:layout_width="0dp"
+            android:background="#E2F6F6"
+            android:hint="Messaggio"
+            android:layout_marginRight="10dp">
+
+        </EditText>
+        <Button
+            android:text="Invia"
+            android:layout_height="45dp"
+            android:layout_width="105dp"
+            android:id="@+id/btnSend"
+            android:backgroundTint="#359BEC"
+            >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

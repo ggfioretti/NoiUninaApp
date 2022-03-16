@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HomePrenotazioneActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/barra_superiore"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/gradient_barrasuperiore" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/barra_superiore"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textModalitaPrenotazione"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Scegli la modalità di prenotazione"
+                android:textColor="#359BEC"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/textIstruzioniListaPrenotazioni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textModalitaPrenotazione"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:text="Accedi alle biblioteche della Federico II ed effettua la tua prenotazione"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/buttonAccediListaBiblioteche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textIstruzioniListaPrenotazioni"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#359BEC"
+                android:ems="15"
+                android:text="Accedi alla lista Biblioteche"
+                android:textColor="@color/white"
+                app:cornerRadius="20dp" />
+
+            <TextView
+                android:id="@+id/textIstruzioniQRCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonAccediListaBiblioteche"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="Utilizza la fotocamera e inquadra il QR Code messo a disposizione dalla biblioteca per accedere al form di prenotazione"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/buttonQRCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textIstruzioniQRCode"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#359BEC"
+                android:ems="15"
+                android:text="Prenota con QR Code"
+                android:textColor="@color/white"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnVisualizzaPrenotazioniEffettuate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonQRCode"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:backgroundTint="#B3420E"
+                android:ems="15"
+                android:text="Visualizza le tue Prenotazioni"
+                android:textColor="@color/white"
+                app:cornerRadius="20dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminate="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

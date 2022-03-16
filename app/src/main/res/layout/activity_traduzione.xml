@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.TraduzioneActivity"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/barra_superiore"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/gradient_barrasuperiore" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/barra_superiore"
+        android:fillViewport="false"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_inserisci_traduzione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Traduci un Testo"
+            android:textColor="#359BEC"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_inserisci_testo_da_tradurre"
+            android:layout_width="300dp"
+            android:layout_height="170dp"
+            android:layout_below="@+id/tv_inserisci_traduzione"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/border_color"
+            android:gravity="top"
+            android:hint="Tocca per digitare il testo"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tv_visualizza_traduzione"
+            android:layout_width="300dp"
+            android:layout_height="170dp"
+            android:layout_below="@+id/et_inserisci_testo_da_tradurre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/border_color"
+            android:gravity="top"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_traduci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_visualizza_traduzione"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#359BEC"
+            android:text="Traduci"
+            app:cornerRadius="20dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

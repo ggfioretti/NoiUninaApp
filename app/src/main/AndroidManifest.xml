@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.noiunina">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NoiUNINA"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".view.DatiPrenotazioneActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".view.ListaPrenotazioniActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".view.ListaBibliotecheActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".view.PrenotazioneActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".view.TraduzioneActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".view.ChatActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".view.ChatCorsiActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".view.SubscriptionActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".view.HomeChatActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".view.QRCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.HomePrenotazioneActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".view.HomeActivity"
+            android:exported="false"
+            />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/gradient_barrasuperiore" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".view.RegisterActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".view.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

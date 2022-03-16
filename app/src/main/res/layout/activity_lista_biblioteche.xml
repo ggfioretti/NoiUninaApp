@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ListaBibliotecheActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/barra_superiore"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/gradient_barrasuperiore" />
+
+    <TextView
+        android:id="@+id/text_listaBiblioteche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barra_superiore"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Seleziona una Biblioteca"
+        android:textColor="#359BEC"
+        android:textSize="25dp"
+        />
+
+    <ListView
+        android:id="@+id/lista_biblioteche"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/text_listaBiblioteche"
+        android:layout_centerHorizontal="true"
+        android:contextClickable="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        />
+
+</RelativeLayout>

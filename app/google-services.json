@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "502601134121",
+    "firebase_url": "https://noiunina-ca44b-default-rtdb.firebaseio.com",
+    "project_id": "noiunina-ca44b",
+    "storage_bucket": "noiunina-ca44b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502601134121:android:74fa4b9de3a80df110ac38",
+        "android_client_info": {
+          "package_name": "com.noiunina"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502601134121-agd7j00boofb1pvhdrm91rkg19u7pebd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbyhY8y7qgZECquLQpemXf3CxNXCyV9W8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502601134121-agd7j00boofb1pvhdrm91rkg19u7pebd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
